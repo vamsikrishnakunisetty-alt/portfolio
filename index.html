@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kunisetty Vamsi Krishna — Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-somehash" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+<style>
+  :root{
+  --bg:#f7f9fb;
+  --card:#fff;
+  --accent:#2463f3;
+  --text:#0f1724;
+  --muted:#566270;
+  --radius:12px;
+  --container:1100px;
+  font-size:16px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--container);margin:0 auto;padding:28px}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,rgba(36,99,243,0.08),transparent);padding:36px 0 14px;border-bottom:1px solid rgba(15,23,36,0.04)}
+.hero .container{display:flex;gap:24px;align-items:center;justify-content:space-between}
+.hero-left{flex:1;min-width:280px}
+.hero-right{width:160px;display:flex;align-items:center;justify-content:center}
+h1{font-size:28px;margin:0 0 6px;font-weight:700}
+h1 .accent{color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 14px}
+
+/* contact chips */
+.contact{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:#fff;border-radius:999px;border:1px solid rgba(15,23,36,0.06);text-decoration:none;color:var(--muted);font-size:14px}
+.chip i{color:var(--accent)}
+
+/* summary & button */
+.summary{margin:12px 0 18px;color:var(--muted);line-height:1.5}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+
+/* Avatar */
+.avatar img{width:140px;height:140px;border-radius:20px;object-fit:cover;box-shadow:0 8px 24px rgba(15,23,36,0.06);border:6px solid #fff}
+
+/* Cards */
+.card{background:var(--card);padding:20px;border-radius:12px;margin:18px 0;box-shadow:0 6px 20px rgba(15,23,36,0.03)}
+.card h2{margin:0 0 12px;font-size:18px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.project{margin:14px 0}
+.project h3{margin:0 0 8px;font-size:16px}
+.project .meta{font-size:13px;color:var(--muted);margin-left:8px}
+.project ul{margin:6px 0;padding-left:18px;color:var(--muted)}
+.project-tech{font-size:14px;color:var(--muted)}
+
+/* education */
+.edu h3{margin:8px 0 2px;font-size:15px}
+.meta{float:right;color:var(--muted);font-size:13px}
+
+/* footer */
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:14px}
+
+/* small screens */
+@media (max-width:880px){
+  .hero .container{flex-direction:column;align-items:flex-start}
+  .hero-right{width:100%;margin-top:8px}
+}
+
+/* links */
+a.link{color:var(--accent);text-decoration:none}
+a.link:hover{text-decoration:underline}
+
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <h1>Kunisetty <span class="accent">Vamsi Krishna</span></h1>
+        <p class="sub">B.Tech CSE Student • Aspiring Software Developer</p>
+
+        <div class="contact">
+          <a href="mailto:vamsikrishnakunisetty@gmail.com" class="chip"><i class="fa fa-envelope"></i> vamsikrishnakunisetty@gmail.com</a>
+          <a href="#" class="chip"><i class="fa fa-phone"></i> +91-8639227446</a>
+          <a href="#" class="chip"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="chip"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+        <p class="summary">
+          B.Tech CSE student with foundational knowledge in Java, Python, and MySQL. Strong interest in software development and problem-solving. Eager to apply my skills in real projects and learn new technologies.
+        </p>
+
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+
+      <div class="hero-right">
+        <!-- Optional: profile image -->
+        <div class="avatar">
+          <!-- put profile.jpg inside images/ if you want -->
+          <img src="images/profile.jpg" alt="Vamsi Krishna" onerror="this.style.display='none'"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="grid-3">
+        <div>
+          <h3>Languages</h3>
+          <p>Python, Java, SQL</p>
+        </div>
+        <div>
+          <h3>Frameworks & Libraries</h3>
+          <p>TensorFlow, PyTorch, Scikit-learn, Keras, Pandas, NumPy, Matplotlib</p>
+        </div>
+        <div>
+          <h3>Tools & Cloud</h3>
+          <p>Jupyter Notebook, VS Code, Git, Docker, AWS, GCP</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2>Personal Projects</h2>
+
+      <article class="project">
+        <h3>Resume Classifier using IBM API <span class="meta">Python • IBM Cloud</span></h3>
+        <ul>
+          <li>Built an AI model to classify resumes into job categories using IBM Watson API and NLP techniques.</li>
+          <li>Performed text preprocessing, tokenization, and feature extraction using Scikit-learn and NLTK.</li>
+          <li>Deployed the model on IBM Cloud with a REST API for real-time classification.</li>
+        </ul>
+        <p class="project-tech"><strong>Technologies:</strong> Python, IBM Watson API, Scikit-learn, Pandas, NumPy</p>
+        <p><a class="link" href="#" target="_blank">View on GitHub</a></p>
+      </article>
+
+      <!-- Add more projects the same way -->
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>VIT-AP University, Amaravathi <span class="meta">2023 – 2027</span></h3>
+        <p>B.Tech in Computer Science and Engineering • GPA: 7.88</p>
+
+        <h3>Bhavana Junior College, Narasaraopet <span class="meta">April 2023</span></h3>
+        <p>Intermediate • 93.3%</p>
+
+        <h3>Andhra High School, Narasaraopet <span class="meta">April 2021</span></h3>
+        <p>Secondary School Certificate (10th Class) • 100%</p>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="card">
+      <h2>Certificates</h2>
+      <ul>
+        <li><strong>IBM:</strong> Generative AI using IBM Watsonx (Verified Certificate)</li>
+        <!-- add more certificates -->
+      </ul>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contact" class="card contact-card">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate or offer internship opportunities, feel free to reach out.</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:vamsikrishnakunisetty@gmail.com">vamsikrishnakunisetty@gmail.com</a><br>
+        <strong>Phone:</strong> +91-8639227446
+      </p>
+      <p><a class="btn" href="mailto:vamsikrishnakunisetty@gmail.com">Email Me</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kunisetty Vamsi Krishna — Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
