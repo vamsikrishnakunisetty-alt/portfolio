@@ -1,74 +1,132 @@
-\documentclass[a4paper,10pt]{article}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kunisetty Vamsi Krishna — Portfolio</title>
 
-% Packages
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{fontawesome}
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-somehash" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-% Page style
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-% Section formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\titlerule]
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <h1>Kunisetty <span class="accent">Vamsi Krishna</span></h1>
+        <p class="sub">B.Tech CSE Student • Aspiring Software Developer</p>
 
-% List style
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+        <div class="contact">
+          <a href="mailto:vamsikrishnakunisetty@gmail.com" class="chip"><i class="fa fa-envelope"></i> vamsikrishnakunisetty@gmail.com</a>
+          <a href="#" class="chip"><i class="fa fa-phone"></i> +91-8639227446</a>
+          <a href="#" class="chip"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="chip"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
 
-% Document
-\begin{document}
+        <p class="summary">
+          B.Tech CSE student with foundational knowledge in Java, Python, and MySQL. Strong interest in software development and problem-solving. Eager to apply my skills in real projects and learn new technologies.
+        </p>
 
-% ---------- Header ----------
-\begin{center}
-    {\Huge \textbf{Kunisetty Vamsi Krishna}} \\[4pt]
-    Narasaraopet, Andhra Pradesh - 522601 \\[2pt]
-    \faEnvelope \ \href{mailto:vamsikrishnakunisetty@gmail.com}{\texttt{vamsikrishnakunisetty@gmail.com}} \quad
-    \faLinkedin \ \href{}{LinkedIn} \quad
-    \faGithub \ \href{}{GitHub} \quad
-    \faPhone \ +91-8639227446
-\end{center}
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
 
-% ---------- Summary ----------
-\section{Professional Summary}
-B.Tech CSE student with foundational knowledge in Java, Python, and MySQL. Strong interest in software development and problem-solving. Eager to apply my skills in real projects and learn new technologies in a professional environment.
+      <div class="hero-right">
+        <!-- Optional: profile image -->
+        <div class="avatar">
+          <!-- put profile.jpg inside images/ if you want -->
+          <img src="images/profile.jpg" alt="Vamsi Krishna" onerror="this.style.display='none'"/>
+        </div>
+      </div>
+    </div>
+  </header>
 
-% ---------- Skills ----------
-\section{Skills}
-\textbf{Languages:} Python, SQL, Java \\
-\textbf{Frameworks \& Libraries:} TensorFlow, PyTorch, Scikit-learn, Keras, Pandas, NumPy, Matplotlib, Seaborn \\
-\textbf{Tools \& Technologies:} Jupyter Notebook, VS Code, Git, Docker, AWS, GCP \\
-\textbf{Core Areas:} Machine Learning, Deep Learning, Data Preprocessing, Feature Engineering, Model Deployment \\
+  <main class="container">
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="grid-3">
+        <div>
+          <h3>Languages</h3>
+          <p>Python, Java, SQL</p>
+        </div>
+        <div>
+          <h3>Frameworks & Libraries</h3>
+          <p>TensorFlow, PyTorch, Scikit-learn, Keras, Pandas, NumPy, Matplotlib</p>
+        </div>
+        <div>
+          <h3>Tools & Cloud</h3>
+          <p>Jupyter Notebook, VS Code, Git, Docker, AWS, GCP</p>
+        </div>
+      </div>
+    </section>
 
-% ---------- Projects ----------
-\section{Personal Projects}
-\textbf{Resume Classifier using IBM API} \hfill \textit{Python + IBM Cloud} \\
-\begin{itemize}
-    \item Built an AI model to classify resumes into job categories using IBM Watson API and NLP techniques.
-    \item Performed text preprocessing, tokenization, and feature extraction using Scikit-learn and NLTK.
-    \item Deployed the model on IBM Cloud with REST API integration for real-time classification.
-\end{itemize}
-\textbf{Technologies:} Python, IBM Watson API, Scikit-learn, Pandas, NumPy
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2>Personal Projects</h2>
 
-% ---------- Education ----------
-\section{Education}
-\textbf{VIT-AP University, Amaravathi} \hfill 2023--2027 \\
-B.Tech in Computer Science and Engineering \hfill GPA: 7.88 \\[4pt]
-\textbf{Bhavana Junior College, Narasaraopet, AP} \hfill April 2023 \\
-Intermediate \hfill GPA: 93.3\% \\[4pt]
-\textbf{Andhra High School, Narasaraopet, AP} \hfill April 2021 \\
-Secondary School Certificate (10th Class) \hfill GPA: 100\%
+      <article class="project">
+        <h3>Resume Classifier using IBM API <span class="meta">Python • IBM Cloud</span></h3>
+        <ul>
+          <li>Built an AI model to classify resumes into job categories using IBM Watson API and NLP techniques.</li>
+          <li>Performed text preprocessing, tokenization, and feature extraction using Scikit-learn and NLTK.</li>
+          <li>Deployed the model on IBM Cloud with a REST API for real-time classification.</li>
+        </ul>
+        <p class="project-tech"><strong>Technologies:</strong> Python, IBM Watson API, Scikit-learn, Pandas, NumPy</p>
+        <p><a class="link" href="#" target="_blank">View on GitHub</a></p>
+      </article>
 
-% ---------- Certificates ----------
-\section{Certificates}
-\textbf{IBM: Generative AI using IBM Watsonx} \hfill \textit{Verified Certificate}
+      <!-- Add more projects the same way -->
+    </section>
 
-\end{document}
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>VIT-AP University, Amaravathi <span class="meta">2023 – 2027</span></h3>
+        <p>B.Tech in Computer Science and Engineering • GPA: 7.88</p>
+
+        <h3>Bhavana Junior College, Narasaraopet <span class="meta">April 2023</span></h3>
+        <p>Intermediate • 93.3%</p>
+
+        <h3>Andhra High School, Narasaraopet <span class="meta">April 2021</span></h3>
+        <p>Secondary School Certificate (10th Class) • 100%</p>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="card">
+      <h2>Certificates</h2>
+      <ul>
+        <li><strong>IBM:</strong> Generative AI using IBM Watsonx (Verified Certificate)</li>
+        <!-- add more certificates -->
+      </ul>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contact" class="card contact-card">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate or offer internship opportunities, feel free to reach out.</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:vamsikrishnakunisetty@gmail.com">vamsikrishnakunisetty@gmail.com</a><br>
+        <strong>Phone:</strong> +91-8639227446
+      </p>
+      <p><a class="btn" href="mailto:vamsikrishnakunisetty@gmail.com">Email Me</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kunisetty Vamsi Krishna — Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
