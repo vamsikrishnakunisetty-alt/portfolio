@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule]
+
+% List style
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+
+% Document
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+    {\Huge \textbf{Kunisetty Vamsi Krishna}} \\[4pt]
+    Narasaraopet, Andhra Pradesh - 522601 \\[2pt]
+    \faEnvelope \ \href{mailto:vamsikrishnakunisetty@gmail.com}{\texttt{vamsikrishnakunisetty@gmail.com}} \quad
+    \faLinkedin \ \href{}{LinkedIn} \quad
+    \faGithub \ \href{}{GitHub} \quad
+    \faPhone \ +91-8639227446
+\end{center}
+
+% ---------- Summary ----------
+\section{Professional Summary}
+B.Tech CSE student with foundational knowledge in Java, Python, and MySQL. Strong interest in software development and problem-solving. Eager to apply my skills in real projects and learn new technologies in a professional environment.
+
+% ---------- Skills ----------
+\section{Skills}
+\textbf{Languages:} Python, SQL, Java \\
+\textbf{Frameworks \& Libraries:} TensorFlow, PyTorch, Scikit-learn, Keras, Pandas, NumPy, Matplotlib, Seaborn \\
+\textbf{Tools \& Technologies:} Jupyter Notebook, VS Code, Git, Docker, AWS, GCP \\
+\textbf{Core Areas:} Machine Learning, Deep Learning, Data Preprocessing, Feature Engineering, Model Deployment \\
+
+% ---------- Projects ----------
+\section{Personal Projects}
+\textbf{Resume Classifier using IBM API} \hfill \textit{Python + IBM Cloud} \\
+\begin{itemize}
+    \item Built an AI model to classify resumes into job categories using IBM Watson API and NLP techniques.
+    \item Performed text preprocessing, tokenization, and feature extraction using Scikit-learn and NLTK.
+    \item Deployed the model on IBM Cloud with REST API integration for real-time classification.
+\end{itemize}
+\textbf{Technologies:} Python, IBM Watson API, Scikit-learn, Pandas, NumPy
+
+% ---------- Education ----------
+\section{Education}
+\textbf{VIT-AP University, Amaravathi} \hfill 2023--2027 \\
+B.Tech in Computer Science and Engineering \hfill GPA: 7.88 \\[4pt]
+\textbf{Bhavana Junior College, Narasaraopet, AP} \hfill April 2023 \\
+Intermediate \hfill GPA: 93.3\% \\[4pt]
+\textbf{Andhra High School, Narasaraopet, AP} \hfill April 2021 \\
+Secondary School Certificate (10th Class) \hfill GPA: 100\%
+
+% ---------- Certificates ----------
+\section{Certificates}
+\textbf{IBM: Generative AI using IBM Watsonx} \hfill \textit{Verified Certificate}
+
+\end{document}
